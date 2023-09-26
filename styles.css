@@ -24,3 +24,37 @@ body {
     padding:0.5em;
     text-decoration:none;
   }
+
+    /* Style the entire card */
+  .items {
+    width: 80%;
+    margin: auto;
+  
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+  }
+
+    /* Style the image in the card */
+  .items img {
+    width: 100%;
+    height: auto;
+  }
+
+   /* Style style both paragraphs in the card. This would be the description and the price */
+    .item p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    }
+
+    /* Style the add to cart button */
+    .item button {
+        background-color: #55db34; 
+        color: #fff; 
+        padding: 5px 10px; 
+        border: none; 
+        border-radius: 5px; 
+        font-size: 14px;
+        margin: 0 auto;
+        display: block; /* Make the button a block-level element */
+    }
