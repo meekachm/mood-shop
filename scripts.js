@@ -43,3 +43,23 @@ for (let i = 0; i < data.length; i += 1) {
 	newDiv.appendChild(button)
 }
 
+// This first video will walk you through how to add and show items on your console 
+// by writing the functions addItem() and showItems().
+
+const cart = []
+
+function addItem(name, price) {
+    const item = { name: name, price: price, qty: 1 }
+    cart.push(name)
+}
+
+function showItems() {
+    console.log(`You have ${cart.length} items in your cart.`)
+}
+
+addItem('Happiness',  5.99)
+addItem('Anger', 5.99)
+addItem('Disgust', 5.99)
+addItem('Shy', 5.99)
+
+showItems()
