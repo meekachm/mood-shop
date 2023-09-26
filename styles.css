@@ -1,0 +1,26 @@
+body {
+    font-family: Courier, "Times New Roman", monospace;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .page-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+  background-color: rgb(232, 255, 105);
+}
+
+  .page-header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+.page-header a {
+    display: block;
+    padding:0.5em;
+    text-decoration:none;
+  }
