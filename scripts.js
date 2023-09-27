@@ -49,6 +49,13 @@ for (let i = 0; i < data.length; i += 1) {
 const itemList = document.getElementById('item-list')
 const cartQty = document.getElementById('cart-qty')
 const cartTotal = document.getElementById('cart-total')
+const all_items_button = Array.from(document.querySelectorAll("button"))
+
+all_items_button.forEach(elt => elt.addEventListener('click', () => {
+	addItem(elt.getAttribute('id'), elt.getAttribute('data-price'))
+	showItems()
+  }))
+
 
 const cart = []
 
@@ -114,19 +121,20 @@ function  removeItem(name, qty = 0) {
 }
 
 //--------------------------------------------
-addItem('Happiness', 5.99)
-addItem('Happiness', 5.99)
-addItem('Anger', 5.99)
-addItem('Happiness', 5.99)
-addItem('Shy', 5.99)
-addItem('Sleep', 5.99)
-addItem('Anger', 5.99)
+addItem('happy', 5.99)
+addItem('happy', 5.99)
+addItem('angry', 5.99)
+addItem('happy', 5.99)
+addItem('shy', 5.99)
+addItem('sleepy', 5.99)
+addItem('angry', 5.99)
 
 showItems()
 
-removeItem('Happiness', 1)
-removeItem('Sleep')
+removeItem('happy', 1)
+removeItem('sleepy')
 
 showItems()
 
 console.log(itemList)
+console.log(all_items_button)
